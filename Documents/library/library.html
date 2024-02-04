@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Catalog - Vallejo Public Library California</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>Vallejo Public Library</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-details.html">Contact Us</a></li>
+          <li><a href="library-card.html">Library Card</a></li>
+          <li><a href="news.html">Latest News</a></li>
+          <li><a href="catalog.html">Book Catalog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="book-catalog">
+      <article class="book">
+        <h2>Book Title: LAST OF US</h2>
+        <p>Author: John</p>
+        <p>Genre: Genre 1</p>
+        <p>Number of Copies: 5</p>
+        <p>Available Copies: 3</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </article>
+
+      <article class="book">
+        <h2>Book Title: WE ONLY LIVE ONCE</h2>
+        <p>Author: Mona</p>
+        <p>Genre: Genre 2</p>
+        <p>Number of Copies: 10</p>
+        <p>Available Copies: 3</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </article>
+
+      <article class="book">
+        <h2>Book Title: GLORY OF EARTH</h2>
+        <p>Author: Simon</p>
+        <p>Genre: Genre 3</p>
+        <p>Number of Copies: 15</p>
+        <p>Available Copies: 5</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </article>
+
+      <!-- Add more articles for additional books -->
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Vallejo Public Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function reserveBook() {
+        // Implement the logic for reserving a book
+        alert("Book reserved successfully!");
+      }
+    </script>
+  </body>
+</html>
