@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vallejo Public Library</title>
+    <title>Book Catalog - Vallejo Public Library</title>
     <style>
       body {
-        font-family:Lucida Console, Monaco, monospace;
+        font-family: Lucida Console, Monaco, monospace;
         margin: 0;
         padding: 0;
       }
@@ -24,7 +24,6 @@
       header h1 {
         margin: 0;
         font-size: 36px;
-        font-family: Lucida Console, Monaco, monospace; 
       }
 
       nav ul {
@@ -44,15 +43,6 @@
         font-size: 18px;
       }
 
-      section.latest-news {
-        background-color: #f0f0f0;
-        padding: 20px;
-      }
-
-      section.latest-news h2 {
-        margin-top: 0;
-      }
-
       section#book-catalog {
         padding: 20px;
       }
@@ -65,6 +55,16 @@
 
       .book h2 {
         margin-top: 0;
+      }
+
+      .book p {
+        margin-bottom: 10px;
+      }
+
+      .book img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
       }
 
       .book button {
@@ -117,20 +117,11 @@
       #search-bar button:hover {
         background-color: #003d6b;
       }
-
-      img {
-        max-width: 100%;
-        height: 750px;
-        display: block;
-        margin: 0 auto;
-        bottom: auto;
-      }
     </style>
   </head>
   <body>
     <header>
-      <h1 style="font-family: Lucida Console, Monaco, monospace;">Vallejo Public Library</h1>
-
+      <h1>Vallejo Public Library</h1>
       <form id="search-bar" action="#" method="get">
         <input type="text" name="search" placeholder="Search Books" />
         <button type="submit">Search</button>
@@ -147,18 +138,66 @@
       </nav>
     </header>
 
-    <img
-      src="/Users/yashvi/Documents/library/facilities-library-900x675-2.jpg"
-    />
+    <section id="book-catalog">
+      <div class="book">
+        <img src="jacket copy.jpg" alt="Book Cover" />
+        <h2>Book Title: Thick as Thieves</h2>
+        <p>Author: Sandra Brown</p>
+        <p>Genre: Adult fiction</p>
+        <p>Number of Copies: 55</p>
+        <p>Available Copies: 20</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </div>
+
+      <div class="book">
+        <img src="jacket.jpg" alt="Book Cover" />
+        <h2>Book Title: Dia De Los Muertos</h2>
+        <p>Author: Roseanne Greenfield Thong</p>
+        <p>Genre: kids fiction</p>
+        <p>Number of Copies: 21</p>
+        <p>Available Copies: 8</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </div>
+
+      <div class="book">
+        <img src="index.jpg" alt="Book Cover" />
+        <h2>Book Title: Anatomy of exercise for 50+</h2>
+        <p>Author: Liebman</p>
+        <p>Genre: Adult non-fiction</p>
+        <p>Number of Copies: 33</p>
+        <p>Available Copies: 8</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </div>
+
+      <div class="book">
+        <img src="eastbay.jpg" alt="Book Cover" />
+        <h2>Book Title: East Bay Then & Now</h2>
+        <p>Author: Dennis Evanosky</p>
+        <p>Genre: History</p>
+        <p>Number of Copies: 15</p>
+        <p>Available Copies: 6</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </div>
+
+      <div class="book">
+        <img src="horror.jpg" alt="Book Cover" />
+        <h2>Book Title: Uzumaki : spiral into horror</h2>
+        <p>Author: Itō, Junji</p>
+        <p>Genre: Adult Graphic Novel</p>
+        <p>Number of Copies: 15</p>
+        <p>Available Copies: 6</p>
+        <button onclick="reserveBook()">Reserve a Copy</button>
+      </div>
+    </section>
 
     <footer>
       <p>&copy; 2024 Vallejo Public Library. All rights reserved.</p>
-      <p>
-        Library Hours: Monday - Friday: 9am - 6pm, Saturday: 10am - 5pm, Sunday:
-        Closed
-      </p>
-      <p></p>
     </footer>
+
+    <script>
+      function reserveBook() {
+        alert("Book reserved successfully!");
+      }
     </script>
   </body>
 </html>
